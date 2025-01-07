@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L4G Payment Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="registration-wrapper">
+        <div class="registration-background">
+            <img src="icon1.png" alt="L4G Logo" class="logo">
+            <h2>Welcome to L4G</h2>
+            <p class="company-description">
+                Join our platform and unlock a world of opportunities. 
+                We are committed to bridging education, skills, and growth to empower students globally.
+            </p>
+        </div>
+        <div class="registration-form">
+            <h2 class="page-heading">Payment Portal</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span> 
+                        <span class="info-message">(This name will appear on your certificate)</span>
+                    </label>
+                    <div class="input-wrapper">
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name (e.g., John Doe)"
+                        >
+                    </div>
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span> 
+                        <span class="info-message">(Enter the email you used for course completion)</span>
+                    </label>
+                    <div class="input-wrapper">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your professional email (e.g., john.doe@company.com)"
+                        >
+                    </div>
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number <span class="required">*</span> 
+                        <span class="info-message">(For verification and support)</span>
+                    </label>
+                    <div class="mobile-input">
+                        <span class="country-code">+91</span>
+                        <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            maxlength="10"
+                            placeholder="Enter 10-digit mobile number (e.g., 9876543210)"
+                        >
+                    </div>
+                    <div class="error-message" id="mobileError"></div>
+                </div>
+                <button type="submit" id="submitButton">
+                    <i class="fas fa-paper-plane"></i> Submit
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
